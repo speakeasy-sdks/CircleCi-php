@@ -7,8 +7,9 @@ management:
 generation:
   telemetryEnabled: false
   sdkClassName: SDK
+  sdkFlattening: true
   singleTagPerOp: false
 php:
-  version: 1.0.0
+  version: ""
   namespace: CircleCi
   packageName: drevops/circleci-sdk
