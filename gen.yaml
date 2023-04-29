@@ -12,4 +12,4 @@ generation:
 php:
   version: ""
   namespace: CircleCi
-  packageName: drevops/circleci-sdk
+  packageName: drevops/circleci-php-sdk
