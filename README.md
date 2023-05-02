@@ -12,11 +12,11 @@ To install the SDK first add the below to your `composer.json` file:
     "repositories": [
         {
             "type": "github",
-            "url": "https://github.com/speakeasy-sdks/CircleCi-php.git"
+            "url": "https://github.com/speakeasy-sdks/CircleCi-PHP-SDK.git"
         }
     ],
     "require": {
-        "drevops/circleci-sdk": "*"
+        "drevops/circleci-php-sdk": "*"
     }
 }
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "drevops/circleci-sdk",
+  "name": "drevops/circleci-php-sdk",
   "type": "library",
   "autoload": {
     "psr-4": {

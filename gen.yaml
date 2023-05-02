@@ -2,14 +2,13 @@ configVersion: 1.0.0
 management:
   docChecksum: 481b6414953dd9fa8c25533487d46be0
   docVersion: v2
-  speakeasyVersion: 1.26.4
-  generationVersion: 2.23.4
+  speakeasyVersion: 1.26.5
+  generationVersion: 2.23.6
 generation:
   telemetryEnabled: false
   sdkClassName: SDK
-  sdkFlattening: true
   singleTagPerOp: false
 php:
-  version: ""
+  version: 0.0.1
   namespace: CircleCi
   packageName: drevops/circleci-php-sdk
