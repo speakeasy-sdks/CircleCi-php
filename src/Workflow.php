@@ -45,7 +45,8 @@ class Workflow
      * @param \CircleCi\Models\Operations\ApprovePendingApprovalJobByIdRequest $request
      * @return \CircleCi\Models\Operations\ApprovePendingApprovalJobByIdResponse
      */
-	public function approvePendingApprovalJobById(
+	
+    public function approvePendingApprovalJobById(
         \CircleCi\Models\Operations\ApprovePendingApprovalJobByIdRequest $request,
     ): \CircleCi\Models\Operations\ApprovePendingApprovalJobByIdResponse
     {
@@ -87,7 +88,8 @@ class Workflow
      * @param \CircleCi\Models\Operations\CancelWorkflowRequest $request
      * @return \CircleCi\Models\Operations\CancelWorkflowResponse
      */
-	public function cancelWorkflow(
+	
+    public function cancelWorkflow(
         \CircleCi\Models\Operations\CancelWorkflowRequest $request,
     ): \CircleCi\Models\Operations\CancelWorkflowResponse
     {
@@ -129,7 +131,8 @@ class Workflow
      * @param \CircleCi\Models\Operations\GetWorkflowByIdRequest $request
      * @return \CircleCi\Models\Operations\GetWorkflowByIdResponse
      */
-	public function getWorkflowById(
+	
+    public function getWorkflowById(
         \CircleCi\Models\Operations\GetWorkflowByIdRequest $request,
     ): \CircleCi\Models\Operations\GetWorkflowByIdResponse
     {
@@ -171,7 +174,8 @@ class Workflow
      * @param \CircleCi\Models\Operations\ListWorkflowJobsRequest $request
      * @return \CircleCi\Models\Operations\ListWorkflowJobsResponse
      */
-	public function listWorkflowJobs(
+	
+    public function listWorkflowJobs(
         \CircleCi\Models\Operations\ListWorkflowJobsRequest $request,
     ): \CircleCi\Models\Operations\ListWorkflowJobsResponse
     {
@@ -213,7 +217,8 @@ class Workflow
      * @param \CircleCi\Models\Operations\RerunWorkflowRequest $request
      * @return \CircleCi\Models\Operations\RerunWorkflowResponse
      */
-	public function rerunWorkflow(
+	
+    public function rerunWorkflow(
         \CircleCi\Models\Operations\RerunWorkflowRequest $request,
     ): \CircleCi\Models\Operations\RerunWorkflowResponse
     {

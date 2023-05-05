@@ -45,7 +45,8 @@ class Schedule
      * @param \CircleCi\Models\Operations\CreateScheduleRequest $request
      * @return \CircleCi\Models\Operations\CreateScheduleResponse
      */
-	public function createSchedule(
+	
+    public function createSchedule(
         \CircleCi\Models\Operations\CreateScheduleRequest $request,
     ): \CircleCi\Models\Operations\CreateScheduleResponse
     {
@@ -89,7 +90,8 @@ class Schedule
      * @param \CircleCi\Models\Operations\DeleteScheduleByIdRequest $request
      * @return \CircleCi\Models\Operations\DeleteScheduleByIdResponse
      */
-	public function deleteScheduleById(
+	
+    public function deleteScheduleById(
         \CircleCi\Models\Operations\DeleteScheduleByIdRequest $request,
     ): \CircleCi\Models\Operations\DeleteScheduleByIdResponse
     {
@@ -131,7 +133,8 @@ class Schedule
      * @param \CircleCi\Models\Operations\GetScheduleByIdRequest $request
      * @return \CircleCi\Models\Operations\GetScheduleByIdResponse
      */
-	public function getScheduleById(
+	
+    public function getScheduleById(
         \CircleCi\Models\Operations\GetScheduleByIdRequest $request,
     ): \CircleCi\Models\Operations\GetScheduleByIdResponse
     {
@@ -173,7 +176,8 @@ class Schedule
      * @param \CircleCi\Models\Operations\ListSchedulesForProjectRequest $request
      * @return \CircleCi\Models\Operations\ListSchedulesForProjectResponse
      */
-	public function listSchedulesForProject(
+	
+    public function listSchedulesForProject(
         \CircleCi\Models\Operations\ListSchedulesForProjectRequest $request,
     ): \CircleCi\Models\Operations\ListSchedulesForProjectResponse
     {
@@ -216,7 +220,8 @@ class Schedule
      * @param \CircleCi\Models\Operations\UpdateScheduleRequest $request
      * @return \CircleCi\Models\Operations\UpdateScheduleResponse
      */
-	public function updateSchedule(
+	
+    public function updateSchedule(
         \CircleCi\Models\Operations\UpdateScheduleRequest $request,
     ): \CircleCi\Models\Operations\UpdateScheduleResponse
     {

@@ -45,7 +45,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\ContinuePipelineRequestBody $request
      * @return \CircleCi\Models\Operations\ContinuePipelineResponse
      */
-	public function continuePipeline(
+	
+    public function continuePipeline(
         \CircleCi\Models\Operations\ContinuePipelineRequestBody $request,
     ): \CircleCi\Models\Operations\ContinuePipelineResponse
     {
@@ -89,7 +90,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\GetPipelineByIdRequest $request
      * @return \CircleCi\Models\Operations\GetPipelineByIdResponse
      */
-	public function getPipelineById(
+	
+    public function getPipelineById(
         \CircleCi\Models\Operations\GetPipelineByIdRequest $request,
     ): \CircleCi\Models\Operations\GetPipelineByIdResponse
     {
@@ -131,7 +133,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\GetPipelineByNumberRequest $request
      * @return \CircleCi\Models\Operations\GetPipelineByNumberResponse
      */
-	public function getPipelineByNumber(
+	
+    public function getPipelineByNumber(
         \CircleCi\Models\Operations\GetPipelineByNumberRequest $request,
     ): \CircleCi\Models\Operations\GetPipelineByNumberResponse
     {
@@ -173,7 +176,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\GetPipelineConfigByIdRequest $request
      * @return \CircleCi\Models\Operations\GetPipelineConfigByIdResponse
      */
-	public function getPipelineConfigById(
+	
+    public function getPipelineConfigById(
         \CircleCi\Models\Operations\GetPipelineConfigByIdRequest $request,
     ): \CircleCi\Models\Operations\GetPipelineConfigByIdResponse
     {
@@ -215,7 +219,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\ListMyPipelinesRequest $request
      * @return \CircleCi\Models\Operations\ListMyPipelinesResponse
      */
-	public function listMyPipelines(
+	
+    public function listMyPipelines(
         \CircleCi\Models\Operations\ListMyPipelinesRequest $request,
     ): \CircleCi\Models\Operations\ListMyPipelinesResponse
     {
@@ -258,7 +263,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\ListPipelinesRequest $request
      * @return \CircleCi\Models\Operations\ListPipelinesResponse
      */
-	public function listPipelines(
+	
+    public function listPipelines(
         \CircleCi\Models\Operations\ListPipelinesRequest $request,
     ): \CircleCi\Models\Operations\ListPipelinesResponse
     {
@@ -301,7 +307,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\ListPipelinesForProjectRequest $request
      * @return \CircleCi\Models\Operations\ListPipelinesForProjectResponse
      */
-	public function listPipelinesForProject(
+	
+    public function listPipelinesForProject(
         \CircleCi\Models\Operations\ListPipelinesForProjectRequest $request,
     ): \CircleCi\Models\Operations\ListPipelinesForProjectResponse
     {
@@ -344,7 +351,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\ListWorkflowsByPipelineIdRequest $request
      * @return \CircleCi\Models\Operations\ListWorkflowsByPipelineIdResponse
      */
-	public function listWorkflowsByPipelineId(
+	
+    public function listWorkflowsByPipelineId(
         \CircleCi\Models\Operations\ListWorkflowsByPipelineIdRequest $request,
     ): \CircleCi\Models\Operations\ListWorkflowsByPipelineIdResponse
     {
@@ -387,7 +395,8 @@ class Pipeline
      * @param \CircleCi\Models\Operations\TriggerPipelineRequest $request
      * @return \CircleCi\Models\Operations\TriggerPipelineResponse
      */
-	public function triggerPipeline(
+	
+    public function triggerPipeline(
         \CircleCi\Models\Operations\TriggerPipelineRequest $request,
     ): \CircleCi\Models\Operations\TriggerPipelineResponse
     {

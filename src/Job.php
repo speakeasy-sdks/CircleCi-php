@@ -45,7 +45,8 @@ class Job
      * @param \CircleCi\Models\Operations\CancelJobRequest $request
      * @return \CircleCi\Models\Operations\CancelJobResponse
      */
-	public function cancelJob(
+	
+    public function cancelJob(
         \CircleCi\Models\Operations\CancelJobRequest $request,
     ): \CircleCi\Models\Operations\CancelJobResponse
     {
@@ -87,7 +88,8 @@ class Job
      * @param \CircleCi\Models\Operations\GetJobArtifactsRequest $request
      * @return \CircleCi\Models\Operations\GetJobArtifactsResponse
      */
-	public function getJobArtifacts(
+	
+    public function getJobArtifacts(
         \CircleCi\Models\Operations\GetJobArtifactsRequest $request,
     ): \CircleCi\Models\Operations\GetJobArtifactsResponse
     {
@@ -129,7 +131,8 @@ class Job
      * @param \CircleCi\Models\Operations\GetJobDetailsRequest $request
      * @return \CircleCi\Models\Operations\GetJobDetailsResponse
      */
-	public function getJobDetails(
+	
+    public function getJobDetails(
         \CircleCi\Models\Operations\GetJobDetailsRequest $request,
     ): \CircleCi\Models\Operations\GetJobDetailsResponse
     {
@@ -171,7 +174,8 @@ class Job
      * @param \CircleCi\Models\Operations\GetTestsRequest $request
      * @return \CircleCi\Models\Operations\GetTestsResponse
      */
-	public function getTests(
+	
+    public function getTests(
         \CircleCi\Models\Operations\GetTestsRequest $request,
     ): \CircleCi\Models\Operations\GetTestsResponse
     {

@@ -43,7 +43,8 @@ class Webhook
      * @param \CircleCi\Models\Operations\CreateWebhookRequestBody $request
      * @return \CircleCi\Models\Operations\CreateWebhookResponse
      */
-	public function createWebhook(
+	
+    public function createWebhook(
         \CircleCi\Models\Operations\CreateWebhookRequestBody $request,
     ): \CircleCi\Models\Operations\CreateWebhookResponse
     {
@@ -85,7 +86,8 @@ class Webhook
      * @param \CircleCi\Models\Operations\DeleteWebhookRequest $request
      * @return \CircleCi\Models\Operations\DeleteWebhookResponse
      */
-	public function deleteWebhook(
+	
+    public function deleteWebhook(
         \CircleCi\Models\Operations\DeleteWebhookRequest $request,
     ): \CircleCi\Models\Operations\DeleteWebhookResponse
     {
@@ -127,7 +129,8 @@ class Webhook
      * @param \CircleCi\Models\Operations\GetWebhookByIdRequest $request
      * @return \CircleCi\Models\Operations\GetWebhookByIdResponse
      */
-	public function getWebhookById(
+	
+    public function getWebhookById(
         \CircleCi\Models\Operations\GetWebhookByIdRequest $request,
     ): \CircleCi\Models\Operations\GetWebhookByIdResponse
     {
@@ -169,7 +172,8 @@ class Webhook
      * @param \CircleCi\Models\Operations\GetWebhooksRequest $request
      * @return \CircleCi\Models\Operations\GetWebhooksResponse
      */
-	public function getWebhooks(
+	
+    public function getWebhooks(
         \CircleCi\Models\Operations\GetWebhooksRequest $request,
     ): \CircleCi\Models\Operations\GetWebhooksResponse
     {
@@ -210,7 +214,8 @@ class Webhook
      * @param \CircleCi\Models\Operations\UpdateWebhookRequest $request
      * @return \CircleCi\Models\Operations\UpdateWebhookResponse
      */
-	public function updateWebhook(
+	
+    public function updateWebhook(
         \CircleCi\Models\Operations\UpdateWebhookRequest $request,
     ): \CircleCi\Models\Operations\UpdateWebhookResponse
     {

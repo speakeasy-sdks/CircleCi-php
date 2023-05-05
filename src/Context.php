@@ -45,7 +45,8 @@ class Context
      * @param \CircleCi\Models\Operations\AddEnvironmentVariableToContextRequest $request
      * @return \CircleCi\Models\Operations\AddEnvironmentVariableToContextResponse
      */
-	public function addEnvironmentVariableToContext(
+	
+    public function addEnvironmentVariableToContext(
         \CircleCi\Models\Operations\AddEnvironmentVariableToContextRequest $request,
     ): \CircleCi\Models\Operations\AddEnvironmentVariableToContextResponse
     {
@@ -87,7 +88,8 @@ class Context
      * @param \CircleCi\Models\Operations\CreateContextRequestBody $request
      * @return \CircleCi\Models\Operations\CreateContextResponse
      */
-	public function createContext(
+	
+    public function createContext(
         \CircleCi\Models\Operations\CreateContextRequestBody $request,
     ): \CircleCi\Models\Operations\CreateContextResponse
     {
@@ -129,7 +131,8 @@ class Context
      * @param \CircleCi\Models\Operations\DeleteContextRequest $request
      * @return \CircleCi\Models\Operations\DeleteContextResponse
      */
-	public function deleteContext(
+	
+    public function deleteContext(
         \CircleCi\Models\Operations\DeleteContextRequest $request,
     ): \CircleCi\Models\Operations\DeleteContextResponse
     {
@@ -171,7 +174,8 @@ class Context
      * @param \CircleCi\Models\Operations\DeleteEnvironmentVariableFromContextRequest $request
      * @return \CircleCi\Models\Operations\DeleteEnvironmentVariableFromContextResponse
      */
-	public function deleteEnvironmentVariableFromContext(
+	
+    public function deleteEnvironmentVariableFromContext(
         \CircleCi\Models\Operations\DeleteEnvironmentVariableFromContextRequest $request,
     ): \CircleCi\Models\Operations\DeleteEnvironmentVariableFromContextResponse
     {
@@ -213,7 +217,8 @@ class Context
      * @param \CircleCi\Models\Operations\GetContextRequest $request
      * @return \CircleCi\Models\Operations\GetContextResponse
      */
-	public function getContext(
+	
+    public function getContext(
         \CircleCi\Models\Operations\GetContextRequest $request,
     ): \CircleCi\Models\Operations\GetContextResponse
     {
@@ -255,7 +260,8 @@ class Context
      * @param \CircleCi\Models\Operations\ListContextsRequest $request
      * @return \CircleCi\Models\Operations\ListContextsResponse
      */
-	public function listContexts(
+	
+    public function listContexts(
         \CircleCi\Models\Operations\ListContextsRequest $request,
     ): \CircleCi\Models\Operations\ListContextsResponse
     {
@@ -298,7 +304,8 @@ class Context
      * @param \CircleCi\Models\Operations\ListEnvironmentVariablesFromContextRequest $request
      * @return \CircleCi\Models\Operations\ListEnvironmentVariablesFromContextResponse
      */
-	public function listEnvironmentVariablesFromContext(
+	
+    public function listEnvironmentVariablesFromContext(
         \CircleCi\Models\Operations\ListEnvironmentVariablesFromContextRequest $request,
     ): \CircleCi\Models\Operations\ListEnvironmentVariablesFromContextResponse
     {
