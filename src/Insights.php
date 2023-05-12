@@ -45,8 +45,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetAllInsightsBranchesRequest $request
      * @return \CircleCi\Models\Operations\GetAllInsightsBranchesResponse
      */
-	
-    public function getAllInsightsBranches(
+	public function getAllInsightsBranches(
         \CircleCi\Models\Operations\GetAllInsightsBranchesRequest $request,
     ): \CircleCi\Models\Operations\GetAllInsightsBranchesResponse
     {
@@ -90,8 +89,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetFlakyTestsRequest $request
      * @return \CircleCi\Models\Operations\GetFlakyTestsResponse
      */
-	
-    public function getFlakyTests(
+	public function getFlakyTests(
         \CircleCi\Models\Operations\GetFlakyTestsRequest $request,
     ): \CircleCi\Models\Operations\GetFlakyTestsResponse
     {
@@ -133,8 +131,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetJobTimeseriesRequest $request
      * @return \CircleCi\Models\Operations\GetJobTimeseriesResponse
      */
-	
-    public function getJobTimeseries(
+	public function getJobTimeseries(
         \CircleCi\Models\Operations\GetJobTimeseriesRequest $request,
     ): \CircleCi\Models\Operations\GetJobTimeseriesResponse
     {
@@ -178,8 +175,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetOrgSummaryDataRequest $request
      * @return \CircleCi\Models\Operations\GetOrgSummaryDataResponse
      */
-	
-    public function getOrgSummaryData(
+	public function getOrgSummaryData(
         \CircleCi\Models\Operations\GetOrgSummaryDataRequest $request,
     ): \CircleCi\Models\Operations\GetOrgSummaryDataResponse
     {
@@ -222,8 +218,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsRequest $request
      * @return \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsResponse
      */
-	
-    public function getProjectWorkflowJobMetrics(
+	public function getProjectWorkflowJobMetrics(
         \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsRequest $request,
     ): \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsResponse
     {
@@ -266,8 +261,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetProjectWorkflowMetricsRequest $request
      * @return \CircleCi\Models\Operations\GetProjectWorkflowMetricsResponse
      */
-	
-    public function getProjectWorkflowMetrics(
+	public function getProjectWorkflowMetrics(
         \CircleCi\Models\Operations\GetProjectWorkflowMetricsRequest $request,
     ): \CircleCi\Models\Operations\GetProjectWorkflowMetricsResponse
     {
@@ -310,8 +304,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetProjectWorkflowRunsRequest $request
      * @return \CircleCi\Models\Operations\GetProjectWorkflowRunsResponse
      */
-	
-    public function getProjectWorkflowRuns(
+	public function getProjectWorkflowRuns(
         \CircleCi\Models\Operations\GetProjectWorkflowRunsRequest $request,
     ): \CircleCi\Models\Operations\GetProjectWorkflowRunsResponse
     {
@@ -354,8 +347,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetProjectWorkflowTestMetricsRequest $request
      * @return \CircleCi\Models\Operations\GetProjectWorkflowTestMetricsResponse
      */
-	
-    public function getProjectWorkflowTestMetrics(
+	public function getProjectWorkflowTestMetrics(
         \CircleCi\Models\Operations\GetProjectWorkflowTestMetricsRequest $request,
     ): \CircleCi\Models\Operations\GetProjectWorkflowTestMetricsResponse
     {
@@ -401,8 +393,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetProjectWorkflowsPageDataRequest $request
      * @return \CircleCi\Models\Operations\GetProjectWorkflowsPageDataResponse
      */
-	
-    public function getProjectWorkflowsPageData(
+	public function getProjectWorkflowsPageData(
         \CircleCi\Models\Operations\GetProjectWorkflowsPageDataRequest $request,
     ): \CircleCi\Models\Operations\GetProjectWorkflowsPageDataResponse
     {
@@ -445,8 +436,7 @@ class Insights
      * @param \CircleCi\Models\Operations\GetWorkflowSummaryRequest $request
      * @return \CircleCi\Models\Operations\GetWorkflowSummaryResponse
      */
-	
-    public function getWorkflowSummary(
+	public function getWorkflowSummary(
         \CircleCi\Models\Operations\GetWorkflowSummaryRequest $request,
     ): \CircleCi\Models\Operations\GetWorkflowSummaryResponse
     {

@@ -50,8 +50,7 @@ class User
      * 
      * @return \CircleCi\Models\Operations\GetCollaborationsResponse
      */
-	
-    public function getCollaborations(
+	public function getCollaborations(
     ): \CircleCi\Models\Operations\GetCollaborationsResponse
     {
         $baseUrl = $this->_serverUrl;
@@ -91,8 +90,7 @@ class User
      * 
      * @return \CircleCi\Models\Operations\GetCurrentUserResponse
      */
-	
-    public function getCurrentUser(
+	public function getCurrentUser(
     ): \CircleCi\Models\Operations\GetCurrentUserResponse
     {
         $baseUrl = $this->_serverUrl;
@@ -133,8 +131,7 @@ class User
      * @param \CircleCi\Models\Operations\GetUserRequest $request
      * @return \CircleCi\Models\Operations\GetUserResponse
      */
-	
-    public function getUser(
+	public function getUser(
         \CircleCi\Models\Operations\GetUserRequest $request,
     ): \CircleCi\Models\Operations\GetUserResponse
     {

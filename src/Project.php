@@ -45,8 +45,7 @@ class Project
      * @param \CircleCi\Models\Operations\CreateCheckoutKeyRequest $request
      * @return \CircleCi\Models\Operations\CreateCheckoutKeyResponse
      */
-	
-    public function createCheckoutKey(
+	public function createCheckoutKey(
         \CircleCi\Models\Operations\CreateCheckoutKeyRequest $request,
     ): \CircleCi\Models\Operations\CreateCheckoutKeyResponse
     {
@@ -90,8 +89,7 @@ class Project
      * @param \CircleCi\Models\Operations\CreateEnvVarRequest $request
      * @return \CircleCi\Models\Operations\CreateEnvVarResponse
      */
-	
-    public function createEnvVar(
+	public function createEnvVar(
         \CircleCi\Models\Operations\CreateEnvVarRequest $request,
     ): \CircleCi\Models\Operations\CreateEnvVarResponse
     {
@@ -135,8 +133,7 @@ class Project
      * @param \CircleCi\Models\Operations\DeleteCheckoutKeyRequest $request
      * @return \CircleCi\Models\Operations\DeleteCheckoutKeyResponse
      */
-	
-    public function deleteCheckoutKey(
+	public function deleteCheckoutKey(
         \CircleCi\Models\Operations\DeleteCheckoutKeyRequest $request,
     ): \CircleCi\Models\Operations\DeleteCheckoutKeyResponse
     {
@@ -178,8 +175,7 @@ class Project
      * @param \CircleCi\Models\Operations\DeleteEnvVarRequest $request
      * @return \CircleCi\Models\Operations\DeleteEnvVarResponse
      */
-	
-    public function deleteEnvVar(
+	public function deleteEnvVar(
         \CircleCi\Models\Operations\DeleteEnvVarRequest $request,
     ): \CircleCi\Models\Operations\DeleteEnvVarResponse
     {
@@ -221,8 +217,7 @@ class Project
      * @param \CircleCi\Models\Operations\GetCheckoutKeyRequest $request
      * @return \CircleCi\Models\Operations\GetCheckoutKeyResponse
      */
-	
-    public function getCheckoutKey(
+	public function getCheckoutKey(
         \CircleCi\Models\Operations\GetCheckoutKeyRequest $request,
     ): \CircleCi\Models\Operations\GetCheckoutKeyResponse
     {
@@ -264,8 +259,7 @@ class Project
      * @param \CircleCi\Models\Operations\GetEnvVarRequest $request
      * @return \CircleCi\Models\Operations\GetEnvVarResponse
      */
-	
-    public function getEnvVar(
+	public function getEnvVar(
         \CircleCi\Models\Operations\GetEnvVarRequest $request,
     ): \CircleCi\Models\Operations\GetEnvVarResponse
     {
@@ -307,8 +301,7 @@ class Project
      * @param \CircleCi\Models\Operations\GetProjectBySlugRequest $request
      * @return \CircleCi\Models\Operations\GetProjectBySlugResponse
      */
-	
-    public function getProjectBySlug(
+	public function getProjectBySlug(
         \CircleCi\Models\Operations\GetProjectBySlugRequest $request,
     ): \CircleCi\Models\Operations\GetProjectBySlugResponse
     {
@@ -350,8 +343,7 @@ class Project
      * @param \CircleCi\Models\Operations\ListCheckoutKeysRequest $request
      * @return \CircleCi\Models\Operations\ListCheckoutKeysResponse
      */
-	
-    public function listCheckoutKeys(
+	public function listCheckoutKeys(
         \CircleCi\Models\Operations\ListCheckoutKeysRequest $request,
     ): \CircleCi\Models\Operations\ListCheckoutKeysResponse
     {
@@ -393,8 +385,7 @@ class Project
      * @param \CircleCi\Models\Operations\ListEnvVarsRequest $request
      * @return \CircleCi\Models\Operations\ListEnvVarsResponse
      */
-	
-    public function listEnvVars(
+	public function listEnvVars(
         \CircleCi\Models\Operations\ListEnvVarsRequest $request,
     ): \CircleCi\Models\Operations\ListEnvVarsResponse
     {
