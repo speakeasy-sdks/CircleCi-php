@@ -29,15 +29,15 @@ class GetPipelineByIdPipelineErrors
     /**
      * The type of error.
      * 
-     * @var \CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsTypeEnum $type
+     * @var \CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsTypeEnum>')]
-    public GetPipelineByIdPipelineErrorsTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsType>')]
+    public GetPipelineByIdPipelineErrorsType $type;
     
 	public function __construct()
 	{
 		$this->message = "";
-		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsTypeEnum::CONFIG;
+		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsType::CONFIG;
 	}
 }

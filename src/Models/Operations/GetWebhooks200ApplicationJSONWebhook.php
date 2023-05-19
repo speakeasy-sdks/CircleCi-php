@@ -23,10 +23,10 @@ class GetWebhooks200ApplicationJSONWebhook
     /**
      * Events that will trigger the webhook
      * 
-     * @var array<\CircleCi\Models\Operations\GetWebhooks200ApplicationJSONWebhookEventsEnum> $events
+     * @var array<\CircleCi\Models\Operations\GetWebhooks200ApplicationJSONWebhookEvents> $events
      */
 	#[\JMS\Serializer\Annotation\SerializedName('events')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\GetWebhooks200ApplicationJSONWebhookEventsEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\GetWebhooks200ApplicationJSONWebhookEvents>>')]
     public array $events;
     
     /**

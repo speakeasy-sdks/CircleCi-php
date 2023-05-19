@@ -155,11 +155,11 @@ class GetJobDetailsJobDetails
     /**
      * The current status of the job.
      * 
-     * @var \CircleCi\Models\Operations\GetJobDetailsJobDetailsStatusEnum $status
+     * @var \CircleCi\Models\Operations\GetJobDetailsJobDetailsStatus $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetJobDetailsJobDetailsStatusEnum>')]
-    public GetJobDetailsJobDetailsStatusEnum $status;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetJobDetailsJobDetailsStatus>')]
+    public GetJobDetailsJobDetailsStatus $status;
     
     /**
      * The time when the job stopped.
@@ -197,7 +197,7 @@ class GetJobDetailsJobDetails
 		$this->project = new \CircleCi\Models\Operations\GetJobDetailsJobDetailsProject();
 		$this->queuedAt = new \DateTime();
 		$this->startedAt = new \DateTime();
-		$this->status = \CircleCi\Models\Operations\GetJobDetailsJobDetailsStatusEnum::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\GetJobDetailsJobDetailsStatus::SUCCESS;
 		$this->stoppedAt = null;
 		$this->webUrl = "";
 	}

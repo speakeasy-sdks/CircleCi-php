@@ -30,10 +30,10 @@ class GetOrgSummaryDataRequest
     /**
      * The time window used to calculate summary metrics.
      * 
-     * @var ?\CircleCi\Models\Operations\GetOrgSummaryDataReportingWindowEnum $reportingWindow
+     * @var ?\CircleCi\Models\Operations\GetOrgSummaryDataReportingWindow $reportingWindow
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=reporting-window')]
-    public ?GetOrgSummaryDataReportingWindowEnum $reportingWindow = null;
+    public ?GetOrgSummaryDataReportingWindow $reportingWindow = null;
     
 	public function __construct()
 	{

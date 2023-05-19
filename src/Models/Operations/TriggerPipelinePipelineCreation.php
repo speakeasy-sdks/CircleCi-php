@@ -47,17 +47,17 @@ class TriggerPipelinePipelineCreation
     /**
      * The current state of the pipeline.
      * 
-     * @var \CircleCi\Models\Operations\TriggerPipelinePipelineCreationStateEnum $state
+     * @var \CircleCi\Models\Operations\TriggerPipelinePipelineCreationState $state
      */
 	#[\JMS\Serializer\Annotation\SerializedName('state')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\TriggerPipelinePipelineCreationStateEnum>')]
-    public TriggerPipelinePipelineCreationStateEnum $state;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\TriggerPipelinePipelineCreationState>')]
+    public TriggerPipelinePipelineCreationState $state;
     
 	public function __construct()
 	{
 		$this->createdAt = new \DateTime();
 		$this->id = "";
 		$this->number = 0;
-		$this->state = \CircleCi\Models\Operations\TriggerPipelinePipelineCreationStateEnum::CREATED;
+		$this->state = \CircleCi\Models\Operations\TriggerPipelinePipelineCreationState::CREATED;
 	}
 }

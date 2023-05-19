@@ -88,11 +88,11 @@ class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow
     /**
      * The current status of the workflow.
      * 
-     * @var \CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum $status
+     * @var \CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum>')]
-    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum $status;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus>')]
+    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus $status;
     
     /**
      * The date and time the workflow stopped.
@@ -106,12 +106,12 @@ class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow
     /**
      * Tag used for the workflow
      * 
-     * @var ?\CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum $tag
+     * @var ?\CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTag $tag
      */
 	#[\JMS\Serializer\Annotation\SerializedName('tag')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum>')]
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTag>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum $tag = null;
+    public ?ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTag $tag = null;
     
 	public function __construct()
 	{
@@ -124,7 +124,7 @@ class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow
 		$this->pipelineNumber = 0;
 		$this->projectSlug = "";
 		$this->startedBy = "";
-		$this->status = \CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus::SUCCESS;
 		$this->stoppedAt = new \DateTime();
 		$this->tag = null;
 	}

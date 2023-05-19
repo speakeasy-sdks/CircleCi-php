@@ -29,15 +29,15 @@ class CreateWebhookRequestBodyScope
     /**
      * Type of the scope being used
      * 
-     * @var \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeTypeEnum $type
+     * @var \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateWebhookRequestBodyScopeTypeEnum>')]
-    public CreateWebhookRequestBodyScopeTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateWebhookRequestBodyScopeType>')]
+    public CreateWebhookRequestBodyScopeType $type;
     
 	public function __construct()
 	{
 		$this->id = "";
-		$this->type = \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeTypeEnum::PROJECT;
+		$this->type = \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeType::PROJECT;
 	}
 }

@@ -99,7 +99,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\GetJobTimeseriesRequest;
-use \CircleCi\Models\Operations\GetJobTimeseriesGranularityEnum;
+use \CircleCi\Models\Operations\GetJobTimeseriesGranularity;
 
 $sdk = SDK::builder()
     ->build();
@@ -108,7 +108,7 @@ try {
     $request = new GetJobTimeseriesRequest();
     $request->branch = 'enim';
     $request->endDate = DateTime::createFromFormat('Y-m-d\TH:i:sP', '2020-02-08T20:51:42.354Z');
-    $request->granularity = GetJobTimeseriesGranularityEnum::HOURLY;
+    $request->granularity = GetJobTimeseriesGranularity::HOURLY;
     $request->projectSlug = 'provident';
     $request->startDate = DateTime::createFromFormat('Y-m-d\TH:i:sP', '2021-09-06T10:36:33.442Z');
     $request->workflowName = 'blanditiis';
@@ -140,7 +140,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\GetOrgSummaryDataRequest;
-use \CircleCi\Models\Operations\GetOrgSummaryDataReportingWindowEnum;
+use \CircleCi\Models\Operations\GetOrgSummaryDataReportingWindow;
 
 $sdk = SDK::builder()
     ->build();
@@ -154,7 +154,7 @@ try {
         'natus' => 'omnis',
         'molestiae' => 'perferendis',
     ];
-    $request->reportingWindow = GetOrgSummaryDataReportingWindowEnum::LAST24_HOURS;
+    $request->reportingWindow = GetOrgSummaryDataReportingWindow::LAST24_HOURS;
 
     $response = $sdk->insights->getOrgSummaryData($request);
 
@@ -182,7 +182,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsRequest;
-use \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsReportingWindowEnum;
+use \CircleCi\Models\Operations\GetProjectWorkflowJobMetricsReportingWindow;
 
 $sdk = SDK::builder()
     ->build();
@@ -193,7 +193,7 @@ try {
     $request->branch = 'magnam';
     $request->pageToken = 'distinctio';
     $request->projectSlug = 'id';
-    $request->reportingWindow = GetProjectWorkflowJobMetricsReportingWindowEnum::LAST90_DAYS;
+    $request->reportingWindow = GetProjectWorkflowJobMetricsReportingWindow::LAST90_DAYS;
     $request->workflowName = 'labore';
 
     $response = $sdk->insights->getProjectWorkflowJobMetrics($request);
@@ -222,7 +222,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\GetProjectWorkflowMetricsRequest;
-use \CircleCi\Models\Operations\GetProjectWorkflowMetricsReportingWindowEnum;
+use \CircleCi\Models\Operations\GetProjectWorkflowMetricsReportingWindow;
 
 $sdk = SDK::builder()
     ->build();
@@ -233,7 +233,7 @@ try {
     $request->branch = 'suscipit';
     $request->pageToken = 'natus';
     $request->projectSlug = 'nobis';
-    $request->reportingWindow = GetProjectWorkflowMetricsReportingWindowEnum::LAST24_HOURS;
+    $request->reportingWindow = GetProjectWorkflowMetricsReportingWindow::LAST24_HOURS;
 
     $response = $sdk->insights->getProjectWorkflowMetrics($request);
 
@@ -341,7 +341,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\GetProjectWorkflowsPageDataRequest;
-use \CircleCi\Models\Operations\GetProjectWorkflowsPageDataReportingWindowEnum;
+use \CircleCi\Models\Operations\GetProjectWorkflowsPageDataReportingWindow;
 
 $sdk = SDK::builder()
     ->build();
@@ -354,7 +354,7 @@ try {
         'dolor' => 'necessitatibus',
     ];
     $request->projectSlug = 'odit';
-    $request->reportingWindow = GetProjectWorkflowsPageDataReportingWindowEnum::LAST90_DAYS;
+    $request->reportingWindow = GetProjectWorkflowsPageDataReportingWindow::LAST90_DAYS;
     $request->workflowNames = [
         'iure' => 'doloribus',
     ];

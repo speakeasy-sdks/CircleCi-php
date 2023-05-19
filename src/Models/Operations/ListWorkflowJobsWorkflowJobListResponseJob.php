@@ -105,11 +105,11 @@ class ListWorkflowJobsWorkflowJobListResponseJob
     /**
      * The current status of the job.
      * 
-     * @var \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatusEnum $status
+     * @var \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatus $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatusEnum>')]
-    public ListWorkflowJobsWorkflowJobListResponseJobStatusEnum $status;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatus>')]
+    public ListWorkflowJobsWorkflowJobListResponseJobStatus $status;
     
     /**
      * The time when the job stopped.
@@ -124,11 +124,11 @@ class ListWorkflowJobsWorkflowJobListResponseJob
     /**
      * The type of job.
      * 
-     * @var \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobTypeEnum $type
+     * @var \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobTypeEnum>')]
-    public ListWorkflowJobsWorkflowJobListResponseJobTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobType>')]
+    public ListWorkflowJobsWorkflowJobListResponseJobType $type;
     
 	public function __construct()
 	{
@@ -141,8 +141,8 @@ class ListWorkflowJobsWorkflowJobListResponseJob
 		$this->name = "";
 		$this->projectSlug = "";
 		$this->startedAt = new \DateTime();
-		$this->status = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatusEnum::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatus::SUCCESS;
 		$this->stoppedAt = null;
-		$this->type = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobTypeEnum::BUILD;
+		$this->type = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobType::BUILD;
 	}
 }

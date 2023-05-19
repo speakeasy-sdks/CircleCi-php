@@ -20,12 +20,12 @@ class UpdateScheduleUpdateScheduleParameters
     /**
      * The attribution-actor of the scheduled pipeline.
      * 
-     * @var ?\CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersAttributionActorEnum $attributionActor
+     * @var ?\CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersAttributionActor $attributionActor
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attribution-actor')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersAttributionActorEnum>')]
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersAttributionActor>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?UpdateScheduleUpdateScheduleParametersAttributionActorEnum $attributionActor = null;
+    public ?UpdateScheduleUpdateScheduleParametersAttributionActor $attributionActor = null;
     
     /**
      * Description of the schedule.

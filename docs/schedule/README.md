@@ -25,7 +25,7 @@ use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\CreateScheduleRequest;
 use \CircleCi\Models\Operations\CreateScheduleCreateScheduleParameters;
-use \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActorEnum;
+use \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActor;
 
 $sdk = SDK::builder()
     ->build();
@@ -33,7 +33,7 @@ $sdk = SDK::builder()
 try {
     $request = new CreateScheduleRequest();
     $request->requestBody = new CreateScheduleCreateScheduleParameters();
-    $request->requestBody->attributionActor = CreateScheduleCreateScheduleParametersAttributionActorEnum::CURRENT;
+    $request->requestBody->attributionActor = CreateScheduleCreateScheduleParametersAttributionActor::CURRENT;
     $request->requestBody->description = 'similique';
     $request->requestBody->name = 'Cristina Hahn';
     $request->requestBody->parameters = [
@@ -50,8 +50,8 @@ try {
         253941,
     ];
     $request->requestBody->timetable->daysOfWeek = [
-        CreateScheduleCreateScheduleParametersTimetable2DaysOfWeekEnum::SAT,
-        CreateScheduleCreateScheduleParametersTimetable2DaysOfWeekEnum::FRI,
+        CreateScheduleCreateScheduleParametersTimetable2DaysOfWeek::SAT,
+        CreateScheduleCreateScheduleParametersTimetable2DaysOfWeek::FRI,
     ];
     $request->requestBody->timetable->hoursOfDay = [
         471752,
@@ -59,7 +59,7 @@ try {
         711584,
     ];
     $request->requestBody->timetable->months = [
-        CreateScheduleCreateScheduleParametersTimetable2MonthsEnum::NOV,
+        CreateScheduleCreateScheduleParametersTimetable2Months::NOV,
     ];
     $request->requestBody->timetable->perHour = 424685;
     $request->projectSlug = 'libero';
@@ -194,10 +194,10 @@ use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\UpdateScheduleRequest;
 use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParameters;
-use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersAttributionActorEnum;
+use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersAttributionActor;
 use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersTimetable;
-use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeekEnum;
-use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersTimetableMonthsEnum;
+use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeek;
+use \CircleCi\Models\Operations\UpdateScheduleUpdateScheduleParametersTimetableMonths;
 
 $sdk = SDK::builder()
     ->build();
@@ -205,7 +205,7 @@ $sdk = SDK::builder()
 try {
     $request = new UpdateScheduleRequest();
     $request->requestBody = new UpdateScheduleUpdateScheduleParameters();
-    $request->requestBody->attributionActor = UpdateScheduleUpdateScheduleParametersAttributionActorEnum::CURRENT;
+    $request->requestBody->attributionActor = UpdateScheduleUpdateScheduleParametersAttributionActor::CURRENT;
     $request->requestBody->description = 'quae';
     $request->requestBody->name = 'Darren McClure';
     $request->requestBody->parameters = [
@@ -220,20 +220,20 @@ try {
         715561,
     ];
     $request->requestBody->timetable->daysOfWeek = [
-        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeekEnum::MON,
-        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeekEnum::THU,
-        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeekEnum::THU,
-        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeekEnum::FRI,
+        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeek::MON,
+        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeek::THU,
+        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeek::THU,
+        UpdateScheduleUpdateScheduleParametersTimetableDaysOfWeek::FRI,
     ];
     $request->requestBody->timetable->hoursOfDay = [
         293020,
         844550,
     ];
     $request->requestBody->timetable->months = [
-        UpdateScheduleUpdateScheduleParametersTimetableMonthsEnum::DEC,
-        UpdateScheduleUpdateScheduleParametersTimetableMonthsEnum::APR,
-        UpdateScheduleUpdateScheduleParametersTimetableMonthsEnum::AUG,
-        UpdateScheduleUpdateScheduleParametersTimetableMonthsEnum::MAR,
+        UpdateScheduleUpdateScheduleParametersTimetableMonths::DEC,
+        UpdateScheduleUpdateScheduleParametersTimetableMonths::APR,
+        UpdateScheduleUpdateScheduleParametersTimetableMonths::AUG,
+        UpdateScheduleUpdateScheduleParametersTimetableMonths::MAR,
     ];
     $request->requestBody->timetable->perHour = 974259;
     $request->scheduleId = '5d2cff7c-70a4-4562-ad43-6813f16d9f5f';

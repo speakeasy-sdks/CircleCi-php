@@ -22,14 +22,14 @@ class GetWebhooksRequest
     /**
      * Type of the scope being used
      * 
-     * @var \CircleCi\Models\Operations\GetWebhooksScopeTypeEnum $scopeType
+     * @var \CircleCi\Models\Operations\GetWebhooksScopeType $scopeType
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=scope-type')]
-    public GetWebhooksScopeTypeEnum $scopeType;
+    public GetWebhooksScopeType $scopeType;
     
 	public function __construct()
 	{
 		$this->scopeId = "";
-		$this->scopeType = \CircleCi\Models\Operations\GetWebhooksScopeTypeEnum::PROJECT;
+		$this->scopeType = \CircleCi\Models\Operations\GetWebhooksScopeType::PROJECT;
 	}
 }

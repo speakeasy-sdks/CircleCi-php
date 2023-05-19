@@ -88,11 +88,11 @@ class GetWorkflowByIdWorkflow
     /**
      * The current status of the workflow.
      * 
-     * @var \CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatusEnum $status
+     * @var \CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatus $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatusEnum>')]
-    public GetWorkflowByIdWorkflowStatusEnum $status;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatus>')]
+    public GetWorkflowByIdWorkflowStatus $status;
     
     /**
      * The date and time the workflow stopped.
@@ -106,12 +106,12 @@ class GetWorkflowByIdWorkflow
     /**
      * Tag used for the workflow
      * 
-     * @var ?\CircleCi\Models\Operations\GetWorkflowByIdWorkflowTagEnum $tag
+     * @var ?\CircleCi\Models\Operations\GetWorkflowByIdWorkflowTag $tag
      */
 	#[\JMS\Serializer\Annotation\SerializedName('tag')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetWorkflowByIdWorkflowTagEnum>')]
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetWorkflowByIdWorkflowTag>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetWorkflowByIdWorkflowTagEnum $tag = null;
+    public ?GetWorkflowByIdWorkflowTag $tag = null;
     
 	public function __construct()
 	{
@@ -124,7 +124,7 @@ class GetWorkflowByIdWorkflow
 		$this->pipelineNumber = 0;
 		$this->projectSlug = "";
 		$this->startedBy = "";
-		$this->status = \CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatusEnum::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatus::SUCCESS;
 		$this->stoppedAt = new \DateTime();
 		$this->tag = null;
 	}

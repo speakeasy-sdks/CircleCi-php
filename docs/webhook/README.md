@@ -24,9 +24,9 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\CreateWebhookRequestBody;
-use \CircleCi\Models\Operations\CreateWebhookRequestBodyEventsEnum;
+use \CircleCi\Models\Operations\CreateWebhookRequestBodyEvents;
 use \CircleCi\Models\Operations\CreateWebhookRequestBodyScope;
-use \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeTypeEnum;
+use \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeType;
 
 $sdk = SDK::builder()
     ->build();
@@ -34,12 +34,12 @@ $sdk = SDK::builder()
 try {
     $request = new CreateWebhookRequestBody();
     $request->events = [
-        CreateWebhookRequestBodyEventsEnum::WORKFLOW_COMPLETED,
+        CreateWebhookRequestBodyEvents::WORKFLOW_COMPLETED,
     ];
     $request->name = 'Vicky Lynch';
     $request->scope = new CreateWebhookRequestBodyScope();
     $request->scope->id = '6b144290-7474-4778-a7bd-466d28c10ab3';
-    $request->scope->type = CreateWebhookRequestBodyScopeTypeEnum::PROJECT;
+    $request->scope->type = CreateWebhookRequestBodyScopeType::PROJECT;
     $request->signingSecret = 'quo';
     $request->url = 'illum';
     $request->verifyTls = false;
@@ -138,7 +138,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\GetWebhooksRequest;
-use \CircleCi\Models\Operations\GetWebhooksScopeTypeEnum;
+use \CircleCi\Models\Operations\GetWebhooksScopeType;
 
 $sdk = SDK::builder()
     ->build();
@@ -146,7 +146,7 @@ $sdk = SDK::builder()
 try {
     $request = new GetWebhooksRequest();
     $request->scopeId = 'be61e6b7-b95b-4c0a-b3c2-0c4f3789fd87';
-    $request->scopeType = GetWebhooksScopeTypeEnum::PROJECT;
+    $request->scopeType = GetWebhooksScopeType::PROJECT;
 
     $response = $sdk->webhook->getWebhooks($request);
 
@@ -175,7 +175,7 @@ use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\UpdateWebhookRequest;
 use \CircleCi\Models\Operations\UpdateWebhookRequestBody;
-use \CircleCi\Models\Operations\UpdateWebhookRequestBodyEventsEnum;
+use \CircleCi\Models\Operations\UpdateWebhookRequestBodyEvents;
 
 $sdk = SDK::builder()
     ->build();
@@ -184,7 +184,7 @@ try {
     $request = new UpdateWebhookRequest();
     $request->requestBody = new UpdateWebhookRequestBody();
     $request->requestBody->events = [
-        UpdateWebhookRequestBodyEventsEnum::JOB_COMPLETED,
+        UpdateWebhookRequestBodyEvents::JOB_COMPLETED,
     ];
     $request->requestBody->name = 'Kirk Stracke';
     $request->requestBody->signingSecret = 'eveniet';

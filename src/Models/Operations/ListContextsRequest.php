@@ -30,10 +30,10 @@ class ListContextsRequest
     /**
      * The type of the owner. Defaults to "organization". Accounts are only used as context owners in server.
      * 
-     * @var ?\CircleCi\Models\Operations\ListContextsOwnerTypeEnum $ownerType
+     * @var ?\CircleCi\Models\Operations\ListContextsOwnerType $ownerType
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=owner-type')]
-    public ?ListContextsOwnerTypeEnum $ownerType = null;
+    public ?ListContextsOwnerType $ownerType = null;
     
     /**
      * A token to retrieve the next page of results.

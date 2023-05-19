@@ -30,10 +30,10 @@ class GetJobTimeseriesRequest
     /**
      * The granularity for which to query timeseries data.
      * 
-     * @var ?\CircleCi\Models\Operations\GetJobTimeseriesGranularityEnum $granularity
+     * @var ?\CircleCi\Models\Operations\GetJobTimeseriesGranularity $granularity
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=granularity')]
-    public ?GetJobTimeseriesGranularityEnum $granularity = null;
+    public ?GetJobTimeseriesGranularity $granularity = null;
     
     /**
      * Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped.

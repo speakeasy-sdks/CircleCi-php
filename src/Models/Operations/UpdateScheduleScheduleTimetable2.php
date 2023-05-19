@@ -29,10 +29,10 @@ class UpdateScheduleScheduleTimetable2
     /**
      * Days in a week in which the schedule triggers.
      * 
-     * @var ?array<\CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2DaysOfWeekEnum> $daysOfWeek
+     * @var ?array<\CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2DaysOfWeek> $daysOfWeek
      */
 	#[\JMS\Serializer\Annotation\SerializedName('days-of-week')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2DaysOfWeekEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2DaysOfWeek>>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $daysOfWeek = null;
     
@@ -48,10 +48,10 @@ class UpdateScheduleScheduleTimetable2
     /**
      * Months in which the schedule triggers.
      * 
-     * @var ?array<\CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2MonthsEnum> $months
+     * @var ?array<\CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2Months> $months
      */
 	#[\JMS\Serializer\Annotation\SerializedName('months')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2MonthsEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\UpdateScheduleScheduleTimetable2Months>>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $months = null;
     

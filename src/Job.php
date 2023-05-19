@@ -53,6 +53,8 @@ class Job
         $url = Utils\Utils::generateUrl($baseUrl, '/project/{project-slug}/job/{job-number}/cancel', \CircleCi\Models\Operations\CancelJobRequest::class, $request);
         
         $options = ['http_errors' => false];
+        $options['headers']['Accept'] = 'application/json;q=1, application/json;q=0';
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->_language, $this->_sdkVersion, $this->_genVersion);
         
         $httpResponse = $this->_securityClient->request('POST', $url, $options);
         
@@ -95,6 +97,8 @@ class Job
         $url = Utils\Utils::generateUrl($baseUrl, '/project/{project-slug}/{job-number}/artifacts', \CircleCi\Models\Operations\GetJobArtifactsRequest::class, $request);
         
         $options = ['http_errors' => false];
+        $options['headers']['Accept'] = 'application/json;q=1, application/json;q=0';
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->_language, $this->_sdkVersion, $this->_genVersion);
         
         $httpResponse = $this->_securityClient->request('GET', $url, $options);
         
@@ -137,6 +141,8 @@ class Job
         $url = Utils\Utils::generateUrl($baseUrl, '/project/{project-slug}/job/{job-number}', \CircleCi\Models\Operations\GetJobDetailsRequest::class, $request);
         
         $options = ['http_errors' => false];
+        $options['headers']['Accept'] = 'application/json;q=1, application/json;q=0';
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->_language, $this->_sdkVersion, $this->_genVersion);
         
         $httpResponse = $this->_securityClient->request('GET', $url, $options);
         
@@ -179,6 +185,8 @@ class Job
         $url = Utils\Utils::generateUrl($baseUrl, '/project/{project-slug}/{job-number}/tests', \CircleCi\Models\Operations\GetTestsRequest::class, $request);
         
         $options = ['http_errors' => false];
+        $options['headers']['Accept'] = 'application/json;q=1, application/json;q=0';
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->_language, $this->_sdkVersion, $this->_genVersion);
         
         $httpResponse = $this->_securityClient->request('GET', $url, $options);
         

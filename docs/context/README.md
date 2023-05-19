@@ -73,7 +73,7 @@ try {
     $request->name = 'Edna Mante II';
     $request->owner = new CreateContextRequestBodyOwner2();
     $request->owner->slug = 'sed';
-    $request->owner->type = CreateContextRequestBodyOwner2TypeEnum::ORGANIZATION;
+    $request->owner->type = CreateContextRequestBodyOwner2Type::ORGANIZATION;
 
     $response = $sdk->context->createContext($request);
 
@@ -204,7 +204,7 @@ use \CircleCi\SDK;
 use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\ListContextsRequest;
-use \CircleCi\Models\Operations\ListContextsOwnerTypeEnum;
+use \CircleCi\Models\Operations\ListContextsOwnerType;
 
 $sdk = SDK::builder()
     ->build();
@@ -213,7 +213,7 @@ try {
     $request = new ListContextsRequest();
     $request->ownerId = 'b99d488e-1e91-4e45-8ad2-abd44269802d';
     $request->ownerSlug = 'ipsam';
-    $request->ownerType = ListContextsOwnerTypeEnum::ACCOUNT;
+    $request->ownerType = ListContextsOwnerType::ACCOUNT;
     $request->pageToken = 'fugit';
 
     $response = $sdk->context->listContexts($request);

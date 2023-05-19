@@ -23,12 +23,12 @@ class CreateContextRequestBodyOwner2
     /**
      * The type of owner. Defaults to "organization". Accounts are only used as context owners in server and must be specified by an id instead of a slug.
      * 
-     * @var ?\CircleCi\Models\Operations\CreateContextRequestBodyOwner2TypeEnum $type
+     * @var ?\CircleCi\Models\Operations\CreateContextRequestBodyOwner2Type $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateContextRequestBodyOwner2TypeEnum>')]
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateContextRequestBodyOwner2Type>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CreateContextRequestBodyOwner2TypeEnum $type = null;
+    public ?CreateContextRequestBodyOwner2Type $type = null;
     
 	public function __construct()
 	{

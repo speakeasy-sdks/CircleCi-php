@@ -29,10 +29,10 @@ class CreateWebhookWebhook
     /**
      * Events that will trigger the webhook
      * 
-     * @var array<\CircleCi\Models\Operations\CreateWebhookWebhookEventsEnum> $events
+     * @var array<\CircleCi\Models\Operations\CreateWebhookWebhookEvents> $events
      */
 	#[\JMS\Serializer\Annotation\SerializedName('events')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\CreateWebhookWebhookEventsEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\CreateWebhookWebhookEvents>>')]
     public array $events;
     
     /**

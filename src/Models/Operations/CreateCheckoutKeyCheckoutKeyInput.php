@@ -14,14 +14,14 @@ class CreateCheckoutKeyCheckoutKeyInput
     /**
      * The type of checkout key to create. This may be either `deploy-key` or `user-key`.
      * 
-     * @var \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum $type
+     * @var \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum>')]
-    public CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType>')]
+    public CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType $type;
     
 	public function __construct()
 	{
-		$this->type = \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum::USER_KEY;
+		$this->type = \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType::USER_KEY;
 	}
 }

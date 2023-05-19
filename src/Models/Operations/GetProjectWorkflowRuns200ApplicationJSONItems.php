@@ -59,11 +59,11 @@ class GetProjectWorkflowRuns200ApplicationJSONItems
     /**
      * Workflow status.
      * 
-     * @var \CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum $status
+     * @var \CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatus $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum>')]
-    public GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum $status;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatus>')]
+    public GetProjectWorkflowRuns200ApplicationJSONItemsStatus $status;
     
     /**
      * The date and time the workflow stopped.
@@ -81,7 +81,7 @@ class GetProjectWorkflowRuns200ApplicationJSONItems
 		$this->creditsUsed = 0;
 		$this->duration = 0;
 		$this->id = "";
-		$this->status = \CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatus::SUCCESS;
 		$this->stoppedAt = new \DateTime();
 	}
 }

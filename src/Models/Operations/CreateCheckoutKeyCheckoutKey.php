@@ -56,11 +56,11 @@ class CreateCheckoutKeyCheckoutKey
     /**
      * The type of checkout key. This may be either `deploy-key` or `github-user-key`.
      * 
-     * @var \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyCheckoutKeyTypeEnum $type
+     * @var \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyCheckoutKeyType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyCheckoutKeyTypeEnum>')]
-    public CreateCheckoutKeyCheckoutKeyCheckoutKeyTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyCheckoutKeyType>')]
+    public CreateCheckoutKeyCheckoutKeyCheckoutKeyType $type;
     
 	public function __construct()
 	{
@@ -68,6 +68,6 @@ class CreateCheckoutKeyCheckoutKey
 		$this->fingerprint = "";
 		$this->preferred = false;
 		$this->publicKey = "";
-		$this->type = \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyCheckoutKeyTypeEnum::DEPLOY_KEY;
+		$this->type = \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyCheckoutKeyType::DEPLOY_KEY;
 	}
 }

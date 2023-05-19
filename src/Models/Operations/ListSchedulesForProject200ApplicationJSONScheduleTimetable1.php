@@ -30,10 +30,10 @@ class ListSchedulesForProject200ApplicationJSONScheduleTimetable1
     /**
      * Days in a week in which the schedule triggers.
      * 
-     * @var array<\CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeekEnum> $daysOfWeek
+     * @var array<\CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeek> $daysOfWeek
      */
 	#[\JMS\Serializer\Annotation\SerializedName('days-of-week')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeekEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeek>>')]
     public array $daysOfWeek;
     
     /**
@@ -48,10 +48,10 @@ class ListSchedulesForProject200ApplicationJSONScheduleTimetable1
     /**
      * Months in which the schedule triggers.
      * 
-     * @var ?array<\CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1MonthsEnum> $months
+     * @var ?array<\CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1Months> $months
      */
 	#[\JMS\Serializer\Annotation\SerializedName('months')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1MonthsEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\ListSchedulesForProject200ApplicationJSONScheduleTimetable1Months>>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $months = null;
     

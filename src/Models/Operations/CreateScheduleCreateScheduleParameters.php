@@ -20,11 +20,11 @@ class CreateScheduleCreateScheduleParameters
     /**
      * The attribution-actor of the scheduled pipeline.
      * 
-     * @var \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActorEnum $attributionActor
+     * @var \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActor $attributionActor
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attribution-actor')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActorEnum>')]
-    public CreateScheduleCreateScheduleParametersAttributionActorEnum $attributionActor;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActor>')]
+    public CreateScheduleCreateScheduleParametersAttributionActor $attributionActor;
     
     /**
      * Description of the schedule.
@@ -65,7 +65,7 @@ class CreateScheduleCreateScheduleParameters
     
 	public function __construct()
 	{
-		$this->attributionActor = \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActorEnum::CURRENT;
+		$this->attributionActor = \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActor::CURRENT;
 		$this->description = null;
 		$this->name = "";
 		$this->parameters = [];

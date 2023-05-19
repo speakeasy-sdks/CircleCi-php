@@ -29,7 +29,7 @@ use \CircleCi\Models\Shared\Security;
 use \CircleCi\Models\Shared\SchemeBasicAuth;
 use \CircleCi\Models\Operations\CreateCheckoutKeyRequest;
 use \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInput;
-use \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum;
+use \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType;
 
 $sdk = SDK::builder()
     ->build();
@@ -37,7 +37,7 @@ $sdk = SDK::builder()
 try {
     $request = new CreateCheckoutKeyRequest();
     $request->requestBody = new CreateCheckoutKeyCheckoutKeyInput();
-    $request->requestBody->type = CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum::DEPLOY_KEY;
+    $request->requestBody->type = CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType::DEPLOY_KEY;
     $request->projectSlug = 'distinctio';
 
     $response = $sdk->project->createCheckoutKey($request);

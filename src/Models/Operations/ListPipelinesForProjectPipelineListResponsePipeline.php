@@ -65,11 +65,11 @@ class ListPipelinesForProjectPipelineListResponsePipeline
     /**
      * The current state of the pipeline.
      * 
-     * @var \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineStateEnum $state
+     * @var \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineState $state
      */
 	#[\JMS\Serializer\Annotation\SerializedName('state')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineStateEnum>')]
-    public ListPipelinesForProjectPipelineListResponsePipelineStateEnum $state;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineState>')]
+    public ListPipelinesForProjectPipelineListResponsePipelineState $state;
     
     /**
      * A summary of the trigger.
@@ -117,7 +117,7 @@ class ListPipelinesForProjectPipelineListResponsePipeline
 		$this->id = "";
 		$this->number = 0;
 		$this->projectSlug = "";
-		$this->state = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineStateEnum::CREATED;
+		$this->state = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineState::CREATED;
 		$this->trigger = new \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTrigger();
 		$this->triggerParameters = null;
 		$this->updatedAt = null;

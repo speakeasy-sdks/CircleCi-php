@@ -46,10 +46,10 @@ class GetProjectWorkflowJobMetricsRequest
     /**
      * The time window used to calculate summary metrics.
      * 
-     * @var ?\CircleCi\Models\Operations\GetProjectWorkflowJobMetricsReportingWindowEnum $reportingWindow
+     * @var ?\CircleCi\Models\Operations\GetProjectWorkflowJobMetricsReportingWindow $reportingWindow
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=reporting-window')]
-    public ?GetProjectWorkflowJobMetricsReportingWindowEnum $reportingWindow = null;
+    public ?GetProjectWorkflowJobMetricsReportingWindow $reportingWindow = null;
     
     /**
      * The name of the workflow.

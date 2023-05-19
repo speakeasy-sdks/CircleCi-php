@@ -38,16 +38,16 @@ class GetPipelineByIdPipelineTrigger
     /**
      * The type of trigger.
      * 
-     * @var \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerTypeEnum $type
+     * @var \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerTypeEnum>')]
-    public GetPipelineByIdPipelineTriggerTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerType>')]
+    public GetPipelineByIdPipelineTriggerType $type;
     
 	public function __construct()
 	{
 		$this->actor = new \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerActor();
 		$this->receivedAt = new \DateTime();
-		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerTypeEnum::SCHEDULED_PIPELINE;
+		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerType::SCHEDULED_PIPELINE;
 	}
 }

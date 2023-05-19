@@ -29,10 +29,10 @@ class CreateScheduleCreateScheduleParametersTimetable2
     /**
      * Days in a week in which the schedule triggers.
      * 
-     * @var ?array<\CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2DaysOfWeekEnum> $daysOfWeek
+     * @var ?array<\CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2DaysOfWeek> $daysOfWeek
      */
 	#[\JMS\Serializer\Annotation\SerializedName('days-of-week')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2DaysOfWeekEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2DaysOfWeek>>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $daysOfWeek = null;
     
@@ -48,10 +48,10 @@ class CreateScheduleCreateScheduleParametersTimetable2
     /**
      * Months in which the schedule triggers.
      * 
-     * @var ?array<\CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2MonthsEnum> $months
+     * @var ?array<\CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2Months> $months
      */
 	#[\JMS\Serializer\Annotation\SerializedName('months')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2MonthsEnum>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersTimetable2Months>>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $months = null;
     

@@ -65,11 +65,11 @@ class GetPipelineByNumberPipeline
     /**
      * The current state of the pipeline.
      * 
-     * @var \CircleCi\Models\Operations\GetPipelineByNumberPipelineStateEnum $state
+     * @var \CircleCi\Models\Operations\GetPipelineByNumberPipelineState $state
      */
 	#[\JMS\Serializer\Annotation\SerializedName('state')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetPipelineByNumberPipelineStateEnum>')]
-    public GetPipelineByNumberPipelineStateEnum $state;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetPipelineByNumberPipelineState>')]
+    public GetPipelineByNumberPipelineState $state;
     
     /**
      * A summary of the trigger.
@@ -117,7 +117,7 @@ class GetPipelineByNumberPipeline
 		$this->id = "";
 		$this->number = 0;
 		$this->projectSlug = "";
-		$this->state = \CircleCi\Models\Operations\GetPipelineByNumberPipelineStateEnum::CREATED;
+		$this->state = \CircleCi\Models\Operations\GetPipelineByNumberPipelineState::CREATED;
 		$this->trigger = new \CircleCi\Models\Operations\GetPipelineByNumberPipelineTrigger();
 		$this->triggerParameters = null;
 		$this->updatedAt = null;

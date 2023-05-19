@@ -29,15 +29,15 @@ class ListPipelinesForProjectPipelineListResponsePipelineErrors
     /**
      * The type of error.
      * 
-     * @var \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsTypeEnum $type
+     * @var \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsTypeEnum>')]
-    public ListPipelinesForProjectPipelineListResponsePipelineErrorsTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsType>')]
+    public ListPipelinesForProjectPipelineListResponsePipelineErrorsType $type;
     
 	public function __construct()
 	{
 		$this->message = "";
-		$this->type = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsTypeEnum::CONFIG;
+		$this->type = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsType::CONFIG;
 	}
 }

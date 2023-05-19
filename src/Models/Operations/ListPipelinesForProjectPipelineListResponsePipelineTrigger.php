@@ -38,16 +38,16 @@ class ListPipelinesForProjectPipelineListResponsePipelineTrigger
     /**
      * The type of trigger.
      * 
-     * @var \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum $type
+     * @var \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum>')]
-    public ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum $type;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerType>')]
+    public ListPipelinesForProjectPipelineListResponsePipelineTriggerType $type;
     
 	public function __construct()
 	{
 		$this->actor = new \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerActor();
 		$this->receivedAt = new \DateTime();
-		$this->type = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum::SCHEDULED_PIPELINE;
+		$this->type = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineTriggerType::SCHEDULED_PIPELINE;
 	}
 }

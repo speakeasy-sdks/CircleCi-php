@@ -24,11 +24,11 @@ class GetProjectBySlugProjectVcsInfo
     /**
      * The VCS provider
      * 
-     * @var \CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProviderEnum $provider
+     * @var \CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProvider $provider
      */
 	#[\JMS\Serializer\Annotation\SerializedName('provider')]
-    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProviderEnum>')]
-    public GetProjectBySlugProjectVcsInfoProviderEnum $provider;
+    #[\JMS\Serializer\Annotation\Type('enum<CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProvider>')]
+    public GetProjectBySlugProjectVcsInfoProvider $provider;
     
     /**
      * URL to the repository hosting the project's code
@@ -42,7 +42,7 @@ class GetProjectBySlugProjectVcsInfo
 	public function __construct()
 	{
 		$this->defaultBranch = "";
-		$this->provider = \CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProviderEnum::BITBUCKET;
+		$this->provider = \CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProvider::BITBUCKET;
 		$this->vcsUrl = "";
 	}
 }
