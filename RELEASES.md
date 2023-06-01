@@ -35,3 +35,9 @@ Based on:
 Based on:
 - OpenAPI Doc v2 https://prod.speakeasyapi.dev/v1/apis/CircleCi/version/v2/schema/download
 - Speakeasy CLI 1.35.0 (2.31.0) https://github.com/speakeasy-api/speakeasy
+
+## 2023-06-01 00:47:14
+### Changes
+Based on:
+- OpenAPI Doc v2 https://prod.speakeasyapi.dev/v1/apis/CircleCi/version/v2/schema/download
+- Speakeasy CLI 1.40.2 (2.34.2) https://github.com/speakeasy-api/speakeasy
