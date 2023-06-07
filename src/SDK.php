@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace CircleCi;
 
 /**
- * SDK - This describes the resources that make up the CircleCI API v2.
+ * SDK - CircleCI API: This describes the resources that make up the CircleCI API v2.
  * 
  * 
  * # Authentication
