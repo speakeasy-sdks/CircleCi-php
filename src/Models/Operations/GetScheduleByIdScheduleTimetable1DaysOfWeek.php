@@ -12,11 +12,11 @@ namespace CircleCi\Models\Operations;
 /** Day in a week, in three letters format */
 enum GetScheduleByIdScheduleTimetable1DaysOfWeek: string
 {
-    case TUE = 'TUE';
-    case SAT = 'SAT';
-    case SUN = 'SUN';
-    case MON = 'MON';
-    case THU = 'THU';
-    case WED = 'WED';
-    case FRI = 'FRI';
+    case Tue = 'TUE';
+    case Sat = 'SAT';
+    case Sun = 'SUN';
+    case Mon = 'MON';
+    case Thu = 'THU';
+    case Wed = 'WED';
+    case Fri = 'FRI';
 }

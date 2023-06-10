@@ -12,6 +12,6 @@ namespace CircleCi\Models\Operations;
 /** The type of job. */
 enum ListWorkflowJobsWorkflowJobListResponseJobType: string
 {
-    case BUILD = 'build';
-    case APPROVAL = 'approval';
+    case Build = 'build';
+    case Approval = 'approval';
 }

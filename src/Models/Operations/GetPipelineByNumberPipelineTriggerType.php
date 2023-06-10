@@ -12,8 +12,8 @@ namespace CircleCi\Models\Operations;
 /** The type of trigger. */
 enum GetPipelineByNumberPipelineTriggerType: string
 {
-    case SCHEDULED_PIPELINE = 'scheduled_pipeline';
-    case EXPLICIT = 'explicit';
-    case API = 'api';
-    case WEBHOOK = 'webhook';
+    case ScheduledPipeline = 'scheduled_pipeline';
+    case Explicit = 'explicit';
+    case Api = 'api';
+    case Webhook = 'webhook';
 }

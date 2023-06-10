@@ -38,6 +38,6 @@ class ListPipelinesForProjectPipelineListResponsePipelineErrors
 	public function __construct()
 	{
 		$this->message = "";
-		$this->type = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsType::CONFIG;
+		$this->type = \CircleCi\Models\Operations\ListPipelinesForProjectPipelineListResponsePipelineErrorsType::Config;
 	}
 }

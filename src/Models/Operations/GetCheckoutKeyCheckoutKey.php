@@ -68,6 +68,6 @@ class GetCheckoutKeyCheckoutKey
 		$this->fingerprint = "";
 		$this->preferred = false;
 		$this->publicKey = "";
-		$this->type = \CircleCi\Models\Operations\GetCheckoutKeyCheckoutKeyCheckoutKeyType::DEPLOY_KEY;
+		$this->type = \CircleCi\Models\Operations\GetCheckoutKeyCheckoutKeyCheckoutKeyType::DeployKey;
 	}
 }

@@ -124,7 +124,7 @@ class GetWorkflowByIdWorkflow
 		$this->pipelineNumber = 0;
 		$this->projectSlug = "";
 		$this->startedBy = "";
-		$this->status = \CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatus::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\GetWorkflowByIdWorkflowStatus::Success;
 		$this->stoppedAt = new \DateTime();
 		$this->tag = null;
 	}

@@ -1,0 +1,11 @@
+# GetProjectWorkflowMetrics200ApplicationJSON
+
+Paginated workflow summary metrics.
+
+
+## Fields
+
+| Field                                                                                                                                  | Type                                                                                                                                   | Required                                                                                                                               | Description                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `items`                                                                                                                                | array<[GetProjectWorkflowMetrics200ApplicationJSONItems](../../models/operations/GetProjectWorkflowMetrics200ApplicationJSONItems.md)> | :heavy_check_mark:                                                                                                                     | Workflow summary metrics.                                                                                                              |
+| `nextPageToken`                                                                                                                        | *string*                                                                                                                               | :heavy_check_mark:                                                                                                                     | A token to pass as a `page-token` query parameter to return the next page of results.                                                  |

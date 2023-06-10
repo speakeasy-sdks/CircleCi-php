@@ -48,6 +48,6 @@ class ListPipelinesPipelineListResponsePipelineTrigger
 	{
 		$this->actor = new \CircleCi\Models\Operations\ListPipelinesPipelineListResponsePipelineTriggerActor();
 		$this->receivedAt = new \DateTime();
-		$this->type = \CircleCi\Models\Operations\ListPipelinesPipelineListResponsePipelineTriggerType::SCHEDULED_PIPELINE;
+		$this->type = \CircleCi\Models\Operations\ListPipelinesPipelineListResponsePipelineTriggerType::ScheduledPipeline;
 	}
 }

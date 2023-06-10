@@ -12,6 +12,6 @@ namespace CircleCi\Models\Operations;
 /** The type of the owner. Defaults to "organization". Accounts are only used as context owners in server. */
 enum ListContextsOwnerType: string
 {
-    case ACCOUNT = 'account';
-    case ORGANIZATION = 'organization';
+    case Account = 'account';
+    case Organization = 'organization';
 }

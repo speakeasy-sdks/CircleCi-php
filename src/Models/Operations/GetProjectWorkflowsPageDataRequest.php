@@ -14,10 +14,10 @@ class GetProjectWorkflowsPageDataRequest
     /**
      * The names of VCS branches to include in branch-level workflow metrics.
      * 
-     * @var ?array<string, mixed> $branches
+     * @var ?\CircleCi\Models\Operations\GetProjectWorkflowsPageDataBranches $branches
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=branches')]
-    public ?array $branches = null;
+    public ?GetProjectWorkflowsPageDataBranches $branches = null;
     
     /**
      * Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped.
@@ -38,10 +38,10 @@ class GetProjectWorkflowsPageDataRequest
     /**
      * The names of workflows to include in workflow-level metrics.
      * 
-     * @var ?array<string, mixed> $workflowNames
+     * @var ?\CircleCi\Models\Operations\GetProjectWorkflowsPageDataWorkflowNames $workflowNames
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=workflow-names')]
-    public ?array $workflowNames = null;
+    public ?GetProjectWorkflowsPageDataWorkflowNames $workflowNames = null;
     
 	public function __construct()
 	{

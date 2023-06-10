@@ -1,0 +1,12 @@
+# GetPipelineByNumberPipelineTrigger
+
+A summary of the trigger.
+
+
+## Fields
+
+| Field                                                                                                         | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `actor`                                                                                                       | [GetPipelineByNumberPipelineTriggerActor](../../models/operations/GetPipelineByNumberPipelineTriggerActor.md) | :heavy_check_mark:                                                                                            | The user who triggered the Pipeline.                                                                          |
+| `receivedAt`                                                                                                  | [\DateTime](https://www.php.net/manual/en/class.datetime.php)                                                 | :heavy_check_mark:                                                                                            | The date and time the trigger was received.                                                                   |
+| `type`                                                                                                        | [GetPipelineByNumberPipelineTriggerType](../../models/operations/GetPipelineByNumberPipelineTriggerType.md)   | :heavy_check_mark:                                                                                            | The type of trigger.                                                                                          |

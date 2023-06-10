@@ -1,0 +1,12 @@
+# GetWorkflowSummary200ApplicationJSON
+
+Workflow level aggregated metrics and trends response
+
+
+## Fields
+
+| Field                                                                                                                 | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `metrics`                                                                                                             | [GetWorkflowSummary200ApplicationJSONMetrics](../../models/operations/GetWorkflowSummary200ApplicationJSONMetrics.md) | :heavy_check_mark:                                                                                                    | Metrics aggregated across a workflow for a given time window.                                                         |
+| `trends`                                                                                                              | [GetWorkflowSummary200ApplicationJSONTrends](../../models/operations/GetWorkflowSummary200ApplicationJSONTrends.md)   | :heavy_check_mark:                                                                                                    | Trends for aggregated metrics across a workflow for a given time window.                                              |
+| `workflowNames`                                                                                                       | array<*string*>                                                                                                       | :heavy_check_mark:                                                                                                    | A list of all the workflow names for a given project.                                                                 |

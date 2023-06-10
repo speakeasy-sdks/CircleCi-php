@@ -38,6 +38,6 @@ class GetPipelineByNumberPipelineErrors
 	public function __construct()
 	{
 		$this->message = "";
-		$this->type = \CircleCi\Models\Operations\GetPipelineByNumberPipelineErrorsType::CONFIG;
+		$this->type = \CircleCi\Models\Operations\GetPipelineByNumberPipelineErrorsType::Config;
 	}
 }

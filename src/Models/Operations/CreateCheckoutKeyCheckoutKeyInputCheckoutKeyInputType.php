@@ -12,6 +12,6 @@ namespace CircleCi\Models\Operations;
 /** The type of checkout key to create. This may be either `deploy-key` or `user-key`. */
 enum CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType: string
 {
-    case USER_KEY = 'user-key';
-    case DEPLOY_KEY = 'deploy-key';
+    case UserKey = 'user-key';
+    case DeployKey = 'deploy-key';
 }

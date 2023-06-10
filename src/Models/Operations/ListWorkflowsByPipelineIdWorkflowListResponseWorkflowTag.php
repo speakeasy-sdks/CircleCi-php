@@ -12,5 +12,5 @@ namespace CircleCi\Models\Operations;
 /** Tag used for the workflow */
 enum ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTag: string
 {
-    case SETUP = 'setup';
+    case Setup = 'setup';
 }

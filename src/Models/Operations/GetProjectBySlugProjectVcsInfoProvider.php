@@ -12,7 +12,7 @@ namespace CircleCi\Models\Operations;
 /** The VCS provider */
 enum GetProjectBySlugProjectVcsInfoProvider: string
 {
-    case BITBUCKET = 'Bitbucket';
-    case CIRCLE_CI = 'CircleCI';
-    case GIT_HUB = 'GitHub';
+    case Bitbucket = 'Bitbucket';
+    case CircleCI = 'CircleCI';
+    case GitHub = 'GitHub';
 }

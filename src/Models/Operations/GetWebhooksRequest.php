@@ -30,6 +30,6 @@ class GetWebhooksRequest
 	public function __construct()
 	{
 		$this->scopeId = "";
-		$this->scopeType = \CircleCi\Models\Operations\GetWebhooksScopeType::PROJECT;
+		$this->scopeType = \CircleCi\Models\Operations\GetWebhooksScopeType::Project;
 	}
 }

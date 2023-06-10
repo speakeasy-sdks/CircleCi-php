@@ -141,8 +141,8 @@ class ListWorkflowJobsWorkflowJobListResponseJob
 		$this->name = "";
 		$this->projectSlug = "";
 		$this->startedAt = new \DateTime();
-		$this->status = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatus::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobStatus::Success;
 		$this->stoppedAt = null;
-		$this->type = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobType::BUILD;
+		$this->type = \CircleCi\Models\Operations\ListWorkflowJobsWorkflowJobListResponseJobType::Build;
 	}
 }

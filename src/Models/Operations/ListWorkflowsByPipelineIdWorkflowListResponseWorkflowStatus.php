@@ -12,13 +12,13 @@ namespace CircleCi\Models\Operations;
 /** The current status of the workflow. */
 enum ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus: string
 {
-    case SUCCESS = 'success';
-    case RUNNING = 'running';
-    case NOT_RUN = 'not_run';
-    case FAILED = 'failed';
-    case ERROR = 'error';
-    case FAILING = 'failing';
-    case ON_HOLD = 'on_hold';
-    case CANCELED = 'canceled';
-    case UNAUTHORIZED = 'unauthorized';
+    case Success = 'success';
+    case Running = 'running';
+    case NotRun = 'not_run';
+    case Failed = 'failed';
+    case Error = 'error';
+    case Failing = 'failing';
+    case OnHold = 'on_hold';
+    case Canceled = 'canceled';
+    case Unauthorized = 'unauthorized';
 }

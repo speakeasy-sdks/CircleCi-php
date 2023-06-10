@@ -38,6 +38,6 @@ class GetPipelineByIdPipelineErrors
 	public function __construct()
 	{
 		$this->message = "";
-		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsType::CONFIG;
+		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineErrorsType::Config;
 	}
 }

@@ -197,7 +197,7 @@ class GetJobDetailsJobDetails
 		$this->project = new \CircleCi\Models\Operations\GetJobDetailsJobDetailsProject();
 		$this->queuedAt = new \DateTime();
 		$this->startedAt = new \DateTime();
-		$this->status = \CircleCi\Models\Operations\GetJobDetailsJobDetailsStatus::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\GetJobDetailsJobDetailsStatus::Success;
 		$this->stoppedAt = null;
 		$this->webUrl = "";
 	}

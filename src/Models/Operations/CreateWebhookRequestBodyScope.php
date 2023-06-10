@@ -38,6 +38,6 @@ class CreateWebhookRequestBodyScope
 	public function __construct()
 	{
 		$this->id = "";
-		$this->type = \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeType::PROJECT;
+		$this->type = \CircleCi\Models\Operations\CreateWebhookRequestBodyScopeType::Project;
 	}
 }

@@ -65,7 +65,7 @@ class CreateScheduleCreateScheduleParameters
     
 	public function __construct()
 	{
-		$this->attributionActor = \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActor::CURRENT;
+		$this->attributionActor = \CircleCi\Models\Operations\CreateScheduleCreateScheduleParametersAttributionActor::Current;
 		$this->description = null;
 		$this->name = "";
 		$this->parameters = [];

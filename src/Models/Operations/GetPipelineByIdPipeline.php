@@ -117,7 +117,7 @@ class GetPipelineByIdPipeline
 		$this->id = "";
 		$this->number = 0;
 		$this->projectSlug = "";
-		$this->state = \CircleCi\Models\Operations\GetPipelineByIdPipelineState::CREATED;
+		$this->state = \CircleCi\Models\Operations\GetPipelineByIdPipelineState::Created;
 		$this->trigger = new \CircleCi\Models\Operations\GetPipelineByIdPipelineTrigger();
 		$this->triggerParameters = null;
 		$this->updatedAt = null;

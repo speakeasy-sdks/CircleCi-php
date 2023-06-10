@@ -12,6 +12,6 @@ namespace CircleCi\Models\Operations;
 /** The granularity for which to query timeseries data. */
 enum GetJobTimeseriesGranularity: string
 {
-    case DAILY = 'daily';
-    case HOURLY = 'hourly';
+    case Daily = 'daily';
+    case Hourly = 'hourly';
 }

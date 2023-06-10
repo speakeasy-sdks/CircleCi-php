@@ -12,9 +12,9 @@ namespace CircleCi\Models\Operations;
 /** Workflow status. */
 enum GetProjectWorkflowRuns200ApplicationJSONItemsStatus: string
 {
-    case SUCCESS = 'success';
-    case FAILED = 'failed';
-    case ERROR = 'error';
-    case CANCELED = 'canceled';
-    case UNAUTHORIZED = 'unauthorized';
+    case Success = 'success';
+    case Failed = 'failed';
+    case Error = 'error';
+    case Canceled = 'canceled';
+    case Unauthorized = 'unauthorized';
 }

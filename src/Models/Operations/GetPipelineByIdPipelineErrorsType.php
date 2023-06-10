@@ -12,10 +12,10 @@ namespace CircleCi\Models\Operations;
 /** The type of error. */
 enum GetPipelineByIdPipelineErrorsType: string
 {
-    case CONFIG = 'config';
-    case CONFIG_FETCH = 'config-fetch';
-    case TIMEOUT = 'timeout';
-    case PERMISSION = 'permission';
-    case OTHER = 'other';
-    case PLAN = 'plan';
+    case Config = 'config';
+    case ConfigFetch = 'config-fetch';
+    case Timeout = 'timeout';
+    case Permission = 'permission';
+    case Other = 'other';
+    case Plan = 'plan';
 }

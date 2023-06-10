@@ -22,10 +22,10 @@ class GetOrgSummaryDataRequest
     /**
      * List of project names.
      * 
-     * @var ?array<string, mixed> $projectNames
+     * @var ?\CircleCi\Models\Operations\GetOrgSummaryDataProjectNames $projectNames
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=project-names')]
-    public ?array $projectNames = null;
+    public ?GetOrgSummaryDataProjectNames $projectNames = null;
     
     /**
      * The time window used to calculate summary metrics.

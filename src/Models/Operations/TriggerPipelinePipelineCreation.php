@@ -58,6 +58,6 @@ class TriggerPipelinePipelineCreation
 		$this->createdAt = new \DateTime();
 		$this->id = "";
 		$this->number = 0;
-		$this->state = \CircleCi\Models\Operations\TriggerPipelinePipelineCreationState::CREATED;
+		$this->state = \CircleCi\Models\Operations\TriggerPipelinePipelineCreationState::Created;
 	}
 }

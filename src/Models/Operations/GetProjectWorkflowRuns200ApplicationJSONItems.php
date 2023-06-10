@@ -81,7 +81,7 @@ class GetProjectWorkflowRuns200ApplicationJSONItems
 		$this->creditsUsed = 0;
 		$this->duration = 0;
 		$this->id = "";
-		$this->status = \CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatus::SUCCESS;
+		$this->status = \CircleCi\Models\Operations\GetProjectWorkflowRuns200ApplicationJSONItemsStatus::Success;
 		$this->stoppedAt = new \DateTime();
 	}
 }

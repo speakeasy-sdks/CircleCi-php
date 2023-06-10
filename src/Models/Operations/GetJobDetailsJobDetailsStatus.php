@@ -12,18 +12,18 @@ namespace CircleCi\Models\Operations;
 /** The current status of the job. */
 enum GetJobDetailsJobDetailsStatus: string
 {
-    case SUCCESS = 'success';
-    case RUNNING = 'running';
-    case NOT_RUN = 'not_run';
-    case FAILED = 'failed';
-    case RETRIED = 'retried';
-    case QUEUED = 'queued';
-    case NOT_RUNNING = 'not_running';
-    case INFRASTRUCTURE_FAIL = 'infrastructure_fail';
-    case TIMEDOUT = 'timedout';
-    case ON_HOLD = 'on_hold';
-    case TERMINATED_UNKNOWN = 'terminated-unknown';
-    case BLOCKED = 'blocked';
-    case CANCELED = 'canceled';
-    case UNAUTHORIZED = 'unauthorized';
+    case Success = 'success';
+    case Running = 'running';
+    case NotRun = 'not_run';
+    case Failed = 'failed';
+    case Retried = 'retried';
+    case Queued = 'queued';
+    case NotRunning = 'not_running';
+    case InfrastructureFail = 'infrastructure_fail';
+    case Timedout = 'timedout';
+    case OnHold = 'on_hold';
+    case TerminatedUnknown = 'terminated-unknown';
+    case Blocked = 'blocked';
+    case Canceled = 'canceled';
+    case Unauthorized = 'unauthorized';
 }

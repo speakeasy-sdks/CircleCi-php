@@ -12,9 +12,9 @@ namespace CircleCi\Models\Operations;
 /** The current state of the pipeline. */
 enum GetPipelineByNumberPipelineState: string
 {
-    case CREATED = 'created';
-    case ERRORED = 'errored';
-    case SETUP_PENDING = 'setup-pending';
-    case SETUP = 'setup';
-    case PENDING = 'pending';
+    case Created = 'created';
+    case Errored = 'errored';
+    case SetupPending = 'setup-pending';
+    case Setup = 'setup';
+    case Pending = 'pending';
 }

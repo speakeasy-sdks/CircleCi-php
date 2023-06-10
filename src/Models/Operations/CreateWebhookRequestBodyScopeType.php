@@ -12,5 +12,5 @@ namespace CircleCi\Models\Operations;
 /** Type of the scope being used */
 enum CreateWebhookRequestBodyScopeType: string
 {
-    case PROJECT = 'project';
+    case Project = 'project';
 }

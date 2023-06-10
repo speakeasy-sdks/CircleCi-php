@@ -12,16 +12,16 @@ namespace CircleCi\Models\Operations;
 /** Month, in three letters format. */
 enum CreateScheduleScheduleTimetable1Months: string
 {
-    case MAR = 'MAR';
-    case NOV = 'NOV';
-    case DEC = 'DEC';
-    case JUN = 'JUN';
-    case MAY = 'MAY';
-    case OCT = 'OCT';
-    case FEB = 'FEB';
-    case APR = 'APR';
-    case SEP = 'SEP';
-    case AUG = 'AUG';
-    case JAN = 'JAN';
-    case JUL = 'JUL';
+    case Mar = 'MAR';
+    case Nov = 'NOV';
+    case Dec = 'DEC';
+    case Jun = 'JUN';
+    case May = 'MAY';
+    case Oct = 'OCT';
+    case Feb = 'FEB';
+    case Apr = 'APR';
+    case Sep = 'SEP';
+    case Aug = 'AUG';
+    case Jan = 'JAN';
+    case Jul = 'JUL';
 }

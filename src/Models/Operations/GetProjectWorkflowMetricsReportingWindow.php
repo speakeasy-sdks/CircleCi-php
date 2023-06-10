@@ -12,9 +12,9 @@ namespace CircleCi\Models\Operations;
 /** The time window used to calculate summary metrics. */
 enum GetProjectWorkflowMetricsReportingWindow: string
 {
-    case LAST7_DAYS = 'last-7-days';
-    case LAST90_DAYS = 'last-90-days';
-    case LAST24_HOURS = 'last-24-hours';
-    case LAST30_DAYS = 'last-30-days';
-    case LAST60_DAYS = 'last-60-days';
+    case Last7Days = 'last-7-days';
+    case Last90Days = 'last-90-days';
+    case Last24Hours = 'last-24-hours';
+    case Last30Days = 'last-30-days';
+    case Last60Days = 'last-60-days';
 }

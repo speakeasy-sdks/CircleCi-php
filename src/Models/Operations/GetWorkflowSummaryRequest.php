@@ -22,10 +22,10 @@ class GetWorkflowSummaryRequest
     /**
      * The names of VCS branches to include in branch-level workflow metrics.
      * 
-     * @var ?array<string, mixed> $branches
+     * @var ?\CircleCi\Models\Operations\GetWorkflowSummaryBranches $branches
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=branches')]
-    public ?array $branches = null;
+    public ?GetWorkflowSummaryBranches $branches = null;
     
     /**
      * Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped.

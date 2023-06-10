@@ -42,7 +42,7 @@ class GetProjectBySlugProjectVcsInfo
 	public function __construct()
 	{
 		$this->defaultBranch = "";
-		$this->provider = \CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProvider::BITBUCKET;
+		$this->provider = \CircleCi\Models\Operations\GetProjectBySlugProjectVcsInfoProvider::Bitbucket;
 		$this->vcsUrl = "";
 	}
 }

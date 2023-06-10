@@ -117,7 +117,7 @@ class ListMyPipelinesPipelineListResponsePipeline
 		$this->id = "";
 		$this->number = 0;
 		$this->projectSlug = "";
-		$this->state = \CircleCi\Models\Operations\ListMyPipelinesPipelineListResponsePipelineState::CREATED;
+		$this->state = \CircleCi\Models\Operations\ListMyPipelinesPipelineListResponsePipelineState::Created;
 		$this->trigger = new \CircleCi\Models\Operations\ListMyPipelinesPipelineListResponsePipelineTrigger();
 		$this->triggerParameters = null;
 		$this->updatedAt = null;

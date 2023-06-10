@@ -12,6 +12,6 @@ namespace CircleCi\Models\Operations;
 /** The attribution-actor of the scheduled pipeline. */
 enum CreateScheduleCreateScheduleParametersAttributionActor: string
 {
-    case CURRENT = 'current';
-    case SYSTEM = 'system';
+    case Current = 'current';
+    case System = 'system';
 }

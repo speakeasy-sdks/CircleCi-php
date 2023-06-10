@@ -11,6 +11,6 @@ namespace CircleCi\Models\Operations;
 
 enum UpdateWebhookWebhookEvents: string
 {
-    case WORKFLOW_COMPLETED = 'workflow-completed';
-    case JOB_COMPLETED = 'job-completed';
+    case WorkflowCompleted = 'workflow-completed';
+    case JobCompleted = 'job-completed';
 }

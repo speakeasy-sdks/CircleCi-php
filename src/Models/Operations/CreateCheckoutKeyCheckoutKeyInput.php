@@ -22,6 +22,6 @@ class CreateCheckoutKeyCheckoutKeyInput
     
 	public function __construct()
 	{
-		$this->type = \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType::USER_KEY;
+		$this->type = \CircleCi\Models\Operations\CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType::UserKey;
 	}
 }

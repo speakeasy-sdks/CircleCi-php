@@ -48,6 +48,6 @@ class GetPipelineByIdPipelineTrigger
 	{
 		$this->actor = new \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerActor();
 		$this->receivedAt = new \DateTime();
-		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerType::SCHEDULED_PIPELINE;
+		$this->type = \CircleCi\Models\Operations\GetPipelineByIdPipelineTriggerType::ScheduledPipeline;
 	}
 }
